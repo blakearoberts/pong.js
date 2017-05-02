@@ -1,0 +1,39 @@
+.container: .row
+  .col-12
+    .jumbotron
+      h1 Pong.js
+      hr
+      p.lead This project combines a web-app framework with a web-graphics library
+
+    .card.mb-4: .card-block
+      h4.card-title Application Information
+      hr
+      .card-body
+        p
+          a(href='#' onclick="$('.newGame').click(); return false;") 3D Pong
+          span!= ' is a take on one of the most original video games, with an added dimension'
+        p
+          a(href='#' onclick="$('.newCubes').click(); return false;") Cubes
+          span!= ' is just a fun exercise to test the THREE.js library'
+
+    .card
+      .card-block
+        h4.card-title Notable Project Dependencies
+      table.table.table-hover.table-sm
+        thead
+          tr.table-active
+            th Dependency
+            th Description
+        tbody
+          tr
+            td: a(href='http://spine.github.io/') Spine.js
+            td Light weight, JavaScript, single page application framework.
+          tr
+            td: a(href='https://threejs.org/') Three.js
+            td Utilized OpenGL and HTML Canvas elements to render and animate complex graphics within the context of the web.
+          tr
+            td: a(href='https://get.webgl.org/') WebGL
+            td Three.js abstracts WebGl (OpenGL) away from the developer, none the less its there in heart!
+          tr
+            td: a(href='https://v4-alpha.getbootstrap.com/') Bootstrap 4
+            td Although in alpha, I thought I'd introduce myself to their reinvented system

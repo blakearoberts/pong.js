@@ -1,0 +1,24 @@
+#game
+#scoreboard
+  .col-4.offset-4.card: .card-block.row.text-center
+    .col-4
+      span.text-danger Red
+      br
+      span#redScore 0
+    .col-4
+      span.font-weight-bold Scoreboard
+      br
+      span#clock 0:00
+    .col-4
+      span.text-primary Blue
+      br
+      span#blueScore 0
+    .col-12: hr
+    .col-12: .row
+      .col-4
+        button#resetBtn.btn.btn-danger.btn-sm Reset
+      .col-4
+        button#playBtn.btn.btn-success.btn-sm Play
+        button#pauseBtn.btn.btn-warning.btn-sm Pause
+      .col-4
+        button#helpBtn.btn.btn-info.btn-sm Help

@@ -1,0 +1,29 @@
+#cubes
+#settings
+  .col-2.offset-10.card: .card-block.row.text-center
+    h4.col-12.card-title Settings
+      hr.m-0
+    .col-12
+      p.mb-0 Cubes
+      .btn-group
+        button#addCube.btn.btn-success.btn-sm(title='add random cube')
+          i.fa.fa-plus
+        button#removeCube.btn.btn-warning.btn-sm(title='remove first in')
+          i.fa.fa-minus
+        button#removeAll.btn.btn-danger.btn-sm(title='remove all')
+          i.fa.fa-trash
+      p.mb-0 Camera
+      .btn-group
+        button#resetCamera.btn.btn-info.btn-sm(title='reset camera')
+          i.fa.fa-camera
+    h4.mt-3.col-12.card-title Controls
+      hr.m-0
+    .col-12
+      p.mb-0 Mouse
+      dl.row
+        dt.col-8.text-right Left Button
+        dd.col-4.text-left Rotate
+        dt.col-8.text-right Right Button
+        dd.col-4.text-left Pan
+        dt.col-8.text-right Middle Button
+        dd.col-4.text-left Zoom
